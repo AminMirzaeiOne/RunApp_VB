@@ -106,5 +106,11 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RunLibrary\RunLibrary.vbproj">
+      <Project>{c818fd6d-bbce-4ca9-b672-7dbe0772bc80}</Project>
+      <Name>RunLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -17,7 +17,7 @@
         ControlPanel
     End Enum
 
-    Public Property SelectApp() As RunLibrary.Run.Apps
+    Public Property SelectApp As RunLibrary.Run.Apps
         Get
             Return appSelect
         End Get
