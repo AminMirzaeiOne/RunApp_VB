@@ -1,4 +1,5 @@
-﻿Public Class Run
+﻿Imports CMDExecute
+Public Class Run
 
     Private appPath As String = ""
     Private appSelect As RunLibrary.Run.Apps
@@ -31,12 +32,13 @@
                 Case Apps.Calculator
                     Me.appPath = "calc"
                 Case Apps.Camera
-                    Me.appPath = "microsoft. windows. camera："
+                    Me.appPath = "microsoft.windows.camera"
             End Select
         End Set
     End Property
 
     Public Sub Start()
-        System.Diagnostics.Process.Start(appPath)
+        Dim ex As Executor = New Executor()
+        ex.ExecuteAsync("start " + appPath)
     End Sub
 End Class
