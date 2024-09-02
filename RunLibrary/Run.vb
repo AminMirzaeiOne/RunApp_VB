@@ -27,10 +27,11 @@
                 Case Apps.Notepad
                     Me.appPath = "notepad.exe"
                 Case Apps.Paint
-                    Me.appPath = "paint.exe"
-                Case Apps.Paint
-                    Me.appPath = "calc.exe"
-
+                    Me.appPath = "mspaint"
+                Case Apps.Calculator
+                    Me.appPath = "calc"
+                Case Apps.Camera
+                    Me.appPath = "microsoft. windows. camera："
             End Select
         End Set
     End Property
