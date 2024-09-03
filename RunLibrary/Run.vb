@@ -64,8 +64,7 @@ Public Class Run
     End Sub
 
     Public Function GetProgrammerInfo() As String
-
-        Return ""
+        Return "Programmer : Amin Mirzaei - Github(Username) : AminMirzaeiOne"
     End Function
 
 End Class
