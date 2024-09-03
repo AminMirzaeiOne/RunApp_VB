@@ -106,6 +106,9 @@
     End Sub
 
     Public Sub DrawCmera()
+        For index = 1 To 23
+            Console.WriteLine()
+        Next
         Dim top As Byte = 10
         Dim left As Byte = 80
         Console.SetCursorPosition(left, top)
