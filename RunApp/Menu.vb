@@ -9,6 +9,7 @@
         DrawControlPanel()
         DrawChrome()
         DrawEdge()
+        DrawSotre()
     End Sub
 
     Public Sub DrawNotepad()
@@ -339,7 +340,7 @@
         Console.Write("   ║                         ║ ")
         top = top + 1
         Console.SetCursorPosition(left, top)
-        Console.Write("   ║    🔍 Microsoft Edge    ║")
+        Console.Write("   ║   🏪 Microsoft Store    ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║")
