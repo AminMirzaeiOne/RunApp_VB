@@ -3,10 +3,11 @@
         DrawNotepad()
         DrawPaint()
         DrawCalculator()
+        DrawCmera()
     End Sub
 
     Public Sub DrawNotepad()
-        Console.ForegroundColor = ConsoleColor.Blue
+        Console.ForegroundColor = ConsoleColor.Magenta
         Console.SetCursorPosition(35, 0)
         Console.WriteLine("---------------- Start and Exit Apps  ----------------")
         Console.SetCursorPosition(0, 7)
@@ -68,7 +69,46 @@
         Dim top As Byte = 7
         Dim left As Byte = 80
         Console.SetCursorPosition(left, top)
-        Console.ForegroundColor = ConsoleColor.Magenta
+        Console.ForegroundColor = ConsoleColor.Blue
+        Console.Write("   ╔═════════════════════════╗")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║      (Application)      ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║ ")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║       🧮 Calculator     ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╔═══════╗   ╔═══════╗  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ║ Start ║   ║ Exit  ║  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╚═══════╝   ╚═══════╝  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ╚═════════════════════════╝")
+        Console.ResetColor()
+    End Sub
+
+    Public Sub DrawCmera()
+        Dim top As Byte = 10
+        Dim left As Byte = 80
+        Console.SetCursorPosition(left, top)
+        Console.ForegroundColor = ConsoleColor.Yellow
         Console.Write("   ╔═════════════════════════╗")
         top = top + 1
         Console.SetCursorPosition(left, top)
