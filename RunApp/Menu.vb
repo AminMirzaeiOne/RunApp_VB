@@ -373,7 +373,7 @@
         Console.Write("   ╔═════════════════════════╗")
         top = top + 1
         Console.SetCursorPosition(left, top)
-        Console.Write("   ║      (Application)      ║")
+        Console.Write("   ║         (System)        ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║═════════════════════════║")
