@@ -6,6 +6,7 @@
         DrawCalculator()
         DrawCmera()
         DrawExplorer()
+        DrawControlPanel()
     End Sub
 
     Public Sub DrawNotepad()
@@ -169,6 +170,48 @@
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║     📂 File Explorer    ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╔═══════╗   ╔═══════╗  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ║ Start ║   ║ Exit  ║  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╚═══════╝   ╚═══════╝  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ╚═════════════════════════╝")
+        Console.ResetColor()
+    End Sub
+
+    Public Sub DrawControlPanel()
+        For index = 1 To 12
+            Console.WriteLine()
+        Next
+        Dim top As Byte = 7
+        Dim left As Byte = 80
+        Console.SetCursorPosition(left, top)
+        Console.ForegroundColor = ConsoleColor.Magenta
+        Console.Write("   ╔═════════════════════════╗")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║         (System)        ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║ ")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║     🎛️ Control Panel    ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║")
