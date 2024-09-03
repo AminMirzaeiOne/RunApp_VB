@@ -4,7 +4,8 @@ Imports RunLibrary
 Module Program
 
     Sub Main()
-        Menu.Draw()
+        Console.OutputEncoding = System.Text.Encoding.UTF8
+        Menu.DrawNotepad()
         Console.ReadKey()
     End Sub
 
