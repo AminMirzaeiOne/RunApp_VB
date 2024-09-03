@@ -125,7 +125,7 @@
         Console.Write("   ║                         ║ ")
         top = top + 1
         Console.SetCursorPosition(left, top)
-        Console.Write("   ║       🧮 Calculator     ║")
+        Console.Write("   ║       📷 Camera         ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║")
