@@ -64,39 +64,40 @@
     End Sub
 
     Public Sub DrawCalculator()
-        Dim x As Byte = 7
-        Console.SetCursorPosition(60, x)
-        Console.ForegroundColor = ConsoleColor.Green
+        Dim top As Byte = 7
+        Dim left As Byte = 80
+        Console.SetCursorPosition(left, top)
+        Console.ForegroundColor = ConsoleColor.Magenta
         Console.Write("   ╔═════════════════════════╗")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
+        top = top + 1
+        Console.SetCursorPosition(left, top)
         Console.Write("   ║      (Application)      ║")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
+        top = top + 1
+        Console.SetCursorPosition(left, top)
         Console.Write("   ║═════════════════════════║")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
+        top = top + 1
+        Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║ ")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
-        Console.Write("   ║       🎨 Paint          ║")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║       🧮 Calculator     ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
+        top = top + 1
+        Console.SetCursorPosition(left, top)
         Console.Write("   ║═════════════════════════║")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
+        top = top + 1
+        Console.SetCursorPosition(left, top)
         Console.Write("   ║  ╔═══════╗   ╔═══════╗  ║")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
+        top = top + 1
+        Console.SetCursorPosition(left, top)
         Console.Write("   ║  ║ Start ║   ║ Exit  ║  ║")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
+        top = top + 1
+        Console.SetCursorPosition(left, top)
         Console.Write("   ║  ╚═══════╝   ╚═══════╝  ║")
-        x = x + 1
-        Console.SetCursorPosition(60, x)
+        top = top + 1
+        Console.SetCursorPosition(left, top)
         Console.Write("   ╚═════════════════════════╝")
         Console.ResetColor()
     End Sub

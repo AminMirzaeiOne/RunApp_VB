@@ -5,8 +5,7 @@ Module Program
 
     Sub Main()
         Console.OutputEncoding = System.Text.Encoding.UTF8
-        Menu.DrawNotepad()
-        Menu.DrawPaint()
+        Menu.DrawAll()
         Console.ReadKey()
     End Sub
 
