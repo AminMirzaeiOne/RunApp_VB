@@ -110,7 +110,7 @@
             Console.WriteLine()
         Next
         Dim top As Byte = 10
-        Dim left As Byte = 80
+        Dim left As Byte = 0
         Console.SetCursorPosition(left, top)
         Console.ForegroundColor = ConsoleColor.Yellow
         Console.Write("   ╔═════════════════════════╗")
@@ -126,6 +126,48 @@
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║       🧮 Calculator     ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╔═══════╗   ╔═══════╗  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ║ Start ║   ║ Exit  ║  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╚═══════╝   ╚═══════╝  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ╚═════════════════════════╝")
+        Console.ResetColor()
+    End Sub
+
+    Public Sub DrawExplorer()
+        For index = 1 To 23
+            Console.WriteLine()
+        Next
+        Dim top As Byte = 10
+        Dim left As Byte = 40
+        Console.SetCursorPosition(left, top)
+        Console.ForegroundColor = ConsoleColor.Cyan
+        Console.Write("   ╔═════════════════════════╗")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║      (Application)      ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║ ")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║       🎨 Paint          ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║")
