@@ -8,6 +8,7 @@
         DrawExplorer()
         DrawControlPanel()
         DrawChrome()
+        DrawEdge()
     End Sub
 
     Public Sub DrawNotepad()
@@ -277,11 +278,11 @@
     End Sub
 
     Public Sub DrawEdge()
-        For index = 1 To 23
+        For index = 1 To 12
             Console.WriteLine()
         Next
         Dim top As Byte = 10
-        Dim left As Byte = 0
+        Dim left As Byte = 40
         Console.SetCursorPosition(left, top)
         Console.ForegroundColor = ConsoleColor.DarkYellow
         Console.Write("   ╔═════════════════════════╗")
@@ -296,7 +297,7 @@
         Console.Write("   ║                         ║ ")
         top = top + 1
         Console.SetCursorPosition(left, top)
-        Console.Write("   ║        🔍 Chrome        ║")
+        Console.Write("   ║    🔍 Microsoft Edge    ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║")
