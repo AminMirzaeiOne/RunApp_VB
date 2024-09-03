@@ -5,6 +5,7 @@
         DrawPaint()
         DrawCalculator()
         DrawCmera()
+        DrawExplorer()
     End Sub
 
     Public Sub DrawNotepad()
@@ -112,7 +113,7 @@
         Dim top As Byte = 10
         Dim left As Byte = 0
         Console.SetCursorPosition(left, top)
-        Console.ForegroundColor = ConsoleColor.Yellow
+        Console.ForegroundColor = ConsoleColor.Cyan
         Console.Write("   ╔═════════════════════════╗")
         top = top + 1
         Console.SetCursorPosition(left, top)
@@ -148,17 +149,17 @@
     End Sub
 
     Public Sub DrawExplorer()
-        For index = 1 To 23
+        For index = 1 To 12
             Console.WriteLine()
         Next
-        Dim top As Byte = 10
+        Dim top As Byte = 7
         Dim left As Byte = 40
         Console.SetCursorPosition(left, top)
-        Console.ForegroundColor = ConsoleColor.Cyan
+        Console.ForegroundColor = ConsoleColor.Yellow
         Console.Write("   ╔═════════════════════════╗")
         top = top + 1
         Console.SetCursorPosition(left, top)
-        Console.Write("   ║      (Application)      ║")
+        Console.Write("   ║         (System)        ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║═════════════════════════║")
@@ -167,7 +168,7 @@
         Console.Write("   ║                         ║ ")
         top = top + 1
         Console.SetCursorPosition(left, top)
-        Console.Write("   ║       🎨 Paint          ║")
+        Console.Write("   ║     📂 File Explorer    ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║")
