@@ -63,4 +63,9 @@ Public Class Run
         Me.executor.ExecuteAsync($"taskkill /IM {appPath} /f")
     End Sub
 
+    Public Function GetProgrammerInfo() As String
+
+        Return ""
+    End Function
+
 End Class
