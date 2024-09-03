@@ -2,7 +2,9 @@
     Public Sub Draw()
         Console.OutputEncoding = System.Text.Encoding.UTF8
         Console.ForegroundColor = ConsoleColor.Blue
-        Console.WriteLine("---------------- Start and Exit App  ----------------")
+        Console.SetCursorPosition(35, 0)
+        Console.WriteLine("---------------- Start and Exit Apps  ----------------")
+        Console.SetCursorPosition(0, 7)
         Console.ResetColor()
         Console.WriteLine("   ╔═════════════════════════╗")
         Console.WriteLine("   ║      (Application)      ║")
