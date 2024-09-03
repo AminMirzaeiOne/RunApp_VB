@@ -6,7 +6,7 @@ Module Program
     Sub Main()
         Menu.DrawAll()
         Dim r As Run = New Run()
-        r.SelectApp = Run.Apps.ControlPanel
+        r.SelectApp = Run.Apps.
         Console.ReadKey()
     End Sub
 
