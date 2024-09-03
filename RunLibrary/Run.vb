@@ -3,6 +3,8 @@ Public Class Run
 
     Private appPath As String = ""
     Private appSelect As RunLibrary.Run.Apps
+    Private executor As Executor = New Executor()
+
     Public Enum Apps
         Notepad
         Paint
@@ -33,12 +35,32 @@ Public Class Run
                     Me.appPath = "calc"
                 Case Apps.Camera
                     Me.appPath = "microsoft.windows.camera"
+                Case Apps.FileExplorer
+                    Me.appPath = "explorer"
+                Case Apps.ControlPanel
+                    Me.appPath = "control panel"
+                Case Apps.Chrome
+                    Me.appPath = "chrome"
+                Case Apps.Edge
+                    Me.appPath = "msedge"
+                Case Apps.PowerShell
+                    Me.appPath = "powershell"
+                Case Apps.Terminal
+                    Me.appPath = "cmd"
+                Case Apps.Settings
+                    Me.appPath = "ms-settings:"
+                Case Apps.MicrosoftStore
+                    Me.appPath = "ms-windows-store:"
             End Select
         End Set
     End Property
 
     Public Sub Start()
-        Dim ex As Executor = New Executor()
-        ex.ExecuteAsync("start " + appPath)
+        Me.executor.ExecuteAsync("start " + appPath)
     End Sub
+
+    Public Sub Exited()
+        Me.executor.ExecuteAsync($"taskkill /IM {appPath} /f")
+    End Sub
+
 End Class
