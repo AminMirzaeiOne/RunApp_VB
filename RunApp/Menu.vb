@@ -1,4 +1,10 @@
 ﻿Module Menu
+    Public Sub DrawAll()
+        DrawNotepad()
+        DrawPaint()
+        DrawCalculator()
+    End Sub
+
     Public Sub DrawNotepad()
         Console.ForegroundColor = ConsoleColor.Blue
         Console.SetCursorPosition(35, 0)
