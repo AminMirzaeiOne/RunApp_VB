@@ -6,5 +6,9 @@
     Public Property BackColor As ConsoleColor = ConsoleColor.Black
     Public Property ForeColor As ConsoleColor = ConsoleColor.White
     Public Property BorderColor As ConsoleColor = ConsoleColor.Blue
+    Public Property HolderColor As ConsoleColor = ConsoleColor.Gray
+    Public Property HolderText As String = "Enter Text"
+
+
 
 End Class
