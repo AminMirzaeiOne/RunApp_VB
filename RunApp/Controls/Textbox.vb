@@ -1,3 +1,3 @@
-﻿Public Class Textbox
+﻿Public Class TextBox
 
 End Class
