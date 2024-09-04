@@ -10,6 +10,7 @@
         DrawChrome()
         DrawEdge()
         DrawSotre()
+        DrawCMD()
     End Sub
 
     Public Sub DrawNotepad()
@@ -363,10 +364,52 @@
     End Sub
 
     Public Sub DrawCMD()
-        For index = 1 To 11
+        For index = 1 To 22
             Console.WriteLine()
         Next
-        Dim top As Byte = 8
+        Dim top As Byte = 10
+        Dim left As Byte = 0
+        Console.SetCursorPosition(left, top)
+        Console.ForegroundColor = ConsoleColor.DarkRed
+        Console.Write("   ╔═════════════════════════╗")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║         (System)        ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║ ")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║   🏪 Microsoft Store    ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╔═══════╗   ╔═══════╗  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ║ Start ║   ║ Exit  ║  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╚═══════╝   ╚═══════╝  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ╚═════════════════════════╝")
+        Console.ResetColor()
+    End Sub
+
+    Public Sub DrawTerminal()
+        For index = 1 To 22
+            Console.WriteLine()
+        Next
+        Dim top As Byte = 10
         Dim left As Byte = 0
         Console.SetCursorPosition(left, top)
         Console.ForegroundColor = ConsoleColor.DarkRed
