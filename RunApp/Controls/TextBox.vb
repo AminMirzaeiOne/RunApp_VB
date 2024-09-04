@@ -1,5 +1,6 @@
 ﻿Public Class TextBox
     Public Sub New(left As Integer, top As Integer, width As Integer, height As Integer)
+        Console.SetBufferSize(Console.BufferWidth, Console.BufferHeight + 100)
         Console.SetCursorPosition(left, top)
         Console.Write("╔")
         For index = 0 To width
@@ -8,6 +9,16 @@
                 Console.Write("╗")
             End If
         Next
+
+        Console.SetCursorPosition(left, top)
+        Dim y As Integer = top
+        For index = 0 To height
+            y = y + 1
+            Console.SetCursorPosition(left, y)
+            Console.Write("║")
+        Next
+
+
     End Sub
 
     Public Property BackColor As ConsoleColor = ConsoleColor.Black
