@@ -1,6 +1,7 @@
 ﻿Module Menu
     Public Sub DrawAll()
         Console.OutputEncoding = System.Text.Encoding.UTF8
+        Title()
         DrawNotepad()
         DrawPaint()
         DrawCalculator()
@@ -495,3 +496,4 @@
     End Sub
 
 End Module
+
