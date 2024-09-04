@@ -73,7 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controls\ComboBox.vb" />
-    <Compile Include="Controls\Textbox.vb" />
+    <Compile Include="Controls\TextBox.vb" />
     <Compile Include="Menu.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
