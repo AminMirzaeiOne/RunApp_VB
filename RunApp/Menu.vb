@@ -448,4 +448,46 @@
         Console.ResetColor()
     End Sub
 
+    Public Sub DrawSettings()
+        For index = 1 To 12
+            Console.WriteLine()
+        Next
+        Dim top As Byte = 7
+        Dim left As Byte = 40
+        Console.SetCursorPosition(left, top)
+        Console.ForegroundColor = ConsoleColor.DarkMagenta
+        Console.Write("   ╔═════════════════════════╗")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║         (System)        ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║ ")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║       ⚙️ Settings       ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║                         ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║═════════════════════════║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╔═══════╗   ╔═══════╗  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ║ Start ║   ║ Exit  ║  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ║  ╚═══════╝   ╚═══════╝  ║")
+        top = top + 1
+        Console.SetCursorPosition(left, top)
+        Console.Write("   ╚═════════════════════════╝")
+        Console.ResetColor()
+    End Sub
+
 End Module
