@@ -15,7 +15,7 @@
         DrawSettings()
     End Sub
 
-    Public Sub Start()
+    Public Sub Title()
         Console.ForegroundColor = ConsoleColor.Magenta
         Console.SetCursorPosition(35, 0)
         Console.WriteLine("---------------- Start and Exit Apps  ----------------")
