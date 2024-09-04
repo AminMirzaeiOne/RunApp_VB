@@ -367,9 +367,9 @@
             Console.WriteLine()
         Next
         Dim top As Byte = 8
-        Dim left As Byte = 80
+        Dim left As Byte = 0
         Console.SetCursorPosition(left, top)
-        Console.ForegroundColor = ConsoleColor.DarkBlue
+        Console.ForegroundColor = ConsoleColor.DarkRed
         Console.Write("   ╔═════════════════════════╗")
         top = top + 1
         Console.SetCursorPosition(left, top)
