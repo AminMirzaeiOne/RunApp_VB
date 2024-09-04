@@ -383,7 +383,7 @@
         Console.Write("   ║                         ║ ")
         top = top + 1
         Console.SetCursorPosition(left, top)
-        Console.Write("   ║   🏪 Microsoft Store    ║")
+        Console.Write("   ║     📟 Command Line     ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║")
@@ -410,9 +410,9 @@
             Console.WriteLine()
         Next
         Dim top As Byte = 10
-        Dim left As Byte = 0
+        Dim left As Byte = 20
         Console.SetCursorPosition(left, top)
-        Console.ForegroundColor = ConsoleColor.DarkRed
+        Console.ForegroundColor = ConsoleColor.DarkYellow
         Console.Write("   ╔═════════════════════════╗")
         top = top + 1
         Console.SetCursorPosition(left, top)
