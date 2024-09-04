@@ -8,7 +8,16 @@ End Enum
 
 Public Class TextBox
 
+    Private leftControl As Integer
+    Private topControl As Integer
+    Private widthControl As Integer
+    Private heightControl As Integer
+
     Public Sub New(left As Integer, top As Integer, width As Integer, height As Integer)
+        Me.leftControl = left
+        Me.topControl = top
+        Me.widthControl = width
+        Me.heightControl = height
         Console.SetBufferSize(Console.BufferWidth, Console.BufferHeight + 100)
         Console.SetCursorPosition(left, top)
         Dim wleft As Integer = 0
