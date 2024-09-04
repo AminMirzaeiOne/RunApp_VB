@@ -1,11 +1,16 @@
-﻿Public Class TextBox
+﻿Imports System.ComponentModel
+
+Public Class TextBox
     Public Sub New(left As Integer, top As Integer, width As Integer, height As Integer)
         Console.SetBufferSize(Console.BufferWidth, Console.BufferHeight + 100)
         Console.SetCursorPosition(left, top)
+        Dim wleft As Integer = 0
+        Dim hleft As Integer = 0
         Console.Write("╔")
         For index = 0 To width
             Console.Write("═")
             If index = width Then
+                wleft = Console.CursorLeft
                 Console.Write("╗")
             End If
         Next
@@ -16,6 +21,26 @@
             y = y + 1
             Console.SetCursorPosition(left, y)
             Console.Write("║")
+            If index = height Then
+                hleft = Console.CursorTop
+            End If
+        Next
+
+        Console.SetCursorPosition(wleft, top)
+        Dim y2 As Integer = top
+        For index = 0 To height
+            y2 = y2 + 1
+            Console.SetCursorPosition(wleft, y2)
+            Console.Write("║")
+        Next
+
+        Console.SetCursorPosition(left, hleft)
+        Console.Write("╚")
+        For index = 0 To width
+            Console.Write("═")
+            If index = width Then
+                Console.Write("╝")
+            End If
         Next
 
 
