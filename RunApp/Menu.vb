@@ -11,7 +11,7 @@
         DrawEdge()
         DrawSotre()
         DrawCMD()
-        DrawTerminal()
+        DrawShell()
     End Sub
 
     Public Sub DrawNotepad()
@@ -406,7 +406,7 @@
         Console.ResetColor()
     End Sub
 
-    Public Sub DrawTerminal()
+    Public Sub DrawShell()
         For index = 1 To 12
             Console.WriteLine()
         Next
@@ -426,7 +426,7 @@
         Console.Write("   ║                         ║ ")
         top = top + 1
         Console.SetCursorPosition(left, top)
-        Console.Write("   ║   🏪 Microsoft Store    ║")
+        Console.Write("   ║     📟 Power Shell      ║")
         top = top + 1
         Console.SetCursorPosition(left, top)
         Console.Write("   ║                         ║")
