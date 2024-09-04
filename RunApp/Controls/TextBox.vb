@@ -12,6 +12,7 @@ Public Class TextBox
     Private topControl As Integer
     Private widthControl As Integer
     Private heightControl As Integer
+    Private align As Aligns = Aligns.Left
 
     Public Sub New(left As Integer, top As Integer, width As Integer, height As Integer)
         Me.leftControl = left
@@ -72,6 +73,15 @@ Public Class TextBox
     Public Property BorderColor As ConsoleColor = ConsoleColor.Blue
     Public Property HolderColor As ConsoleColor = ConsoleColor.Gray
     Public Property HolderText As String = "Enter Text"
+
+    Public Property TextAlign As Aligns
+        Get
+            Return Me.align
+        End Get
+        Set(ByVal value As Aligns)
+            Me.align = value
+        End Set
+    End Property
 
 
 
