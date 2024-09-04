@@ -15,11 +15,14 @@
         DrawSettings()
     End Sub
 
-    Public Sub DrawNotepad()
+    Public Sub Start()
         Console.ForegroundColor = ConsoleColor.Magenta
         Console.SetCursorPosition(35, 0)
         Console.WriteLine("---------------- Start and Exit Apps  ----------------")
         Console.SetCursorPosition(0, 7)
+    End Sub
+
+    Public Sub DrawNotepad()
         Console.ForegroundColor = ConsoleColor.Red
         Console.WriteLine("   ╔═════════════════════════╗")
         Console.WriteLine("   ║      (Application)      ║")
