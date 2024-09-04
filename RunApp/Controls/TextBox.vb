@@ -13,6 +13,8 @@ Public Class TextBox
         Console.SetCursorPosition(left, top)
         Dim wleft As Integer = 0
         Dim hleft As Integer = 0
+        Console.ForegroundColor = BorderColor
+        Console.BackgroundColor = ConsoleColor.White
         Console.Write("╔")
         For index = 0 To width
             Console.Write("═")
@@ -49,6 +51,10 @@ Public Class TextBox
                 Console.Write("╝")
             End If
         Next
+
+    End Sub
+
+    Public Sub EnterText()
 
     End Sub
 
