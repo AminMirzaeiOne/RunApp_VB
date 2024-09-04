@@ -1,6 +1,13 @@
 ﻿Imports System.ComponentModel
 
+Public Enum Aligns
+    Left
+    Center
+    Right
+End Enum
+
 Public Class TextBox
+
     Public Sub New(left As Integer, top As Integer, width As Integer, height As Integer)
         Console.SetBufferSize(Console.BufferWidth, Console.BufferHeight + 100)
         Console.SetCursorPosition(left, top)
@@ -42,7 +49,6 @@ Public Class TextBox
                 Console.Write("╝")
             End If
         Next
-
 
     End Sub
 
