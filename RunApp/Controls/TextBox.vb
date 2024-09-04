@@ -24,7 +24,6 @@ Public Class TextBox
         Dim wleft As Integer = 0
         Dim hleft As Integer = 0
         Console.ForegroundColor = BorderColor
-        Console.BackgroundColor = ConsoleColor.White
         Console.Write("╔")
         For index = 0 To width
             Console.Write("═")
@@ -73,6 +72,7 @@ Public Class TextBox
     Public Property BorderColor As ConsoleColor = ConsoleColor.Blue
     Public Property HolderColor As ConsoleColor = ConsoleColor.Gray
     Public Property HolderText As String = "Enter Text"
+    Public Property MaxLength As Byte = 150
 
     Public Property TextAlign As Aligns
         Get
@@ -80,6 +80,15 @@ Public Class TextBox
         End Get
         Set(ByVal value As Aligns)
             Me.align = value
+            Select Case value
+                Case Aligns.Left
+                    Console.SetCursorPosition(Me.leftControl + 1, Me.topControl + Me.heightControl)
+                    Console.Write("Hello World")
+                Case Aligns.Center
+
+                Case Aligns.Right
+
+            End Select
         End Set
     End Property
 
