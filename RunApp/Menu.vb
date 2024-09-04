@@ -11,6 +11,7 @@
         DrawEdge()
         DrawSotre()
         DrawCMD()
+        DrawTerminal()
     End Sub
 
     Public Sub DrawNotepad()
@@ -410,7 +411,7 @@
             Console.WriteLine()
         Next
         Dim top As Byte = 10
-        Dim left As Byte = 20
+        Dim left As Byte = 40
         Console.SetCursorPosition(left, top)
         Console.ForegroundColor = ConsoleColor.DarkYellow
         Console.Write("   ╔═════════════════════════╗")
