@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.Text
 
 Public Enum Aligns
     Left
@@ -64,8 +65,18 @@ Public Class TextBox
     End Sub
 
     Public Sub EnterText()
-
+        Console.OutputEncoding = Encoding.UTF8
+        Console.ForegroundColor = ForeColor
+        'Console.Write(ReversText(Console.Read()))
+        Console.Write(ReversText("امین"))
     End Sub
+
+    Public Function ReversText(Text As String) As String
+        If Text Is Nothing Then Return Nothing
+        Dim arrayd As Char() = Text.ToCharArray()
+        Array.Reverse(arrayd)
+        Return New String(arrayd)
+    End Function
 
     Public Property BackColor As ConsoleColor = ConsoleColor.Black
     Public Property ForeColor As ConsoleColor = ConsoleColor.White
@@ -73,6 +84,7 @@ Public Class TextBox
     Public Property HolderColor As ConsoleColor = ConsoleColor.Gray
     Public Property HolderText As String = "Enter Text"
     Public Property MaxLength As Byte = 150
+    Public Property RightToLeft As Boolean = False
 
     Public Property TextAlign As Aligns
         Get
@@ -82,8 +94,8 @@ Public Class TextBox
             Me.align = value
             Select Case value
                 Case Aligns.Left
-                    Console.SetCursorPosition(Me.leftControl + 1, Me.topControl + Me.heightControl)
-                    Console.Write("Hello World")
+                    Console.SetCursorPosition(Me.leftControl + 1, Me.topControl + 1)
+                    Me.EnterText()
                 Case Aligns.Center
 
                 Case Aligns.Right
